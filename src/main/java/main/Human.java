@@ -9,7 +9,6 @@ public class Human {
 
     Parrot parrot;
 
-    @Autowired
     public Human(Parrot parrot) {
         this.parrot = parrot;
     }
