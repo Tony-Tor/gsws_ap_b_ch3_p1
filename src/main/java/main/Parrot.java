@@ -6,8 +6,10 @@ import org.springframework.stereotype.Component;
 public class Parrot {
     String name = "KoKo";
 
-    public Parrot() {
+    Human human;
 
+    public Parrot(Human human) {
+        this.human = human;
     }
 
     public String getName() {
