@@ -3,7 +3,9 @@ package main;
 public class Parrot {
     String name;
 
-
+    public Parrot() {
+        System.out.println("Попка создан");
+    }
 
     public String getName() {
         return name;
