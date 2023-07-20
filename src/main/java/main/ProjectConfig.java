@@ -19,6 +19,7 @@ public class ProjectConfig {
     public Human human(){
         Human h = new Human();
         h.setName("Ella");
+        h.setParrot(parrot());
         return h;
     }
 }
