@@ -16,10 +16,10 @@ public class ProjectConfig {
     }
 
     @Bean
-    public Human human(){
+    public Human human(Parrot parrot){
         Human h = new Human();
         h.setName("Ella");
-        h.setParrot(parrot());
+        h.setParrot(parrot);
         return h;
     }
 }
