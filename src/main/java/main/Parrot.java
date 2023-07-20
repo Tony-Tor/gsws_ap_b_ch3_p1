@@ -1,7 +1,10 @@
 package main;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Parrot {
-    String name;
+    String name = "KoKo";
 
     public Parrot() {
 
