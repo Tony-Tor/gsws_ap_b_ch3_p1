@@ -15,16 +15,11 @@ public class ProjectConfig {
         return p;
     }
 
-    public Parrot parrotTest(){
-        Parrot parrot = parrot();
-        return parrot;
-    }
-
     @Bean
     public Human human(){
         Human h = new Human();
         h.setName("Ella");
-        h.setParrot(parrotTest());
+        h.setParrot(parrot());
         return h;
     }
 }
