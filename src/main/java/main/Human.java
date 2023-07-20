@@ -7,8 +7,12 @@ import org.springframework.stereotype.Component;
 public class Human {
     String name = "Ella";
 
-    @Autowired
     Parrot parrot;
+
+    @Autowired
+    public Human(Parrot parrot) {
+        this.parrot = parrot;
+    }
 
     public String getName() {
         return name;
