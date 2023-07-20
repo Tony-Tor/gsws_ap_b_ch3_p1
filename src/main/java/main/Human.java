@@ -9,9 +9,9 @@ public class Human {
 
     Parrot parrot;
 
-    public Human(Parrot parrot) {
+    /*public Human(Parrot parrot) {
         this.parrot = parrot;
-    }
+   }*/
 
     public String getName() {
         return name;
@@ -24,7 +24,7 @@ public class Human {
     public Parrot getParrot() {
         return parrot;
     }
-
+    @Autowired
     public void setParrot(Parrot parrot) {
         this.parrot = parrot;
     }
