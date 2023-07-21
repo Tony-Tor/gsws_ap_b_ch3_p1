@@ -1,5 +1,6 @@
 package main;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +12,7 @@ import java.time.Period;
 public class ProjectConfig {
 
     @Bean
-    //@Primary
+    @Primary
     public Parrot parrot1(){
         Parrot p = new Parrot();
         p.setName("KoKo");
@@ -26,7 +27,7 @@ public class ProjectConfig {
     }
 
     @Bean
-    public Human person(Parrot parrot2){
+    public Human person(@Qualifier("parrot2") Parrot parrot2){
         Human h = new Human();
         h.setName("Ella");
         h.setParrot(parrot2);
