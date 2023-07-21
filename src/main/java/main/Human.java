@@ -10,8 +10,8 @@ public class Human {
 
     Parrot parrot;
 
-    public Human(@Qualifier("parrot1") Parrot parrot) {
-        this.parrot = parrot;
+    public Human(Parrot parrot2) {
+        this.parrot = parrot2;
     }
 
     public String getName() {

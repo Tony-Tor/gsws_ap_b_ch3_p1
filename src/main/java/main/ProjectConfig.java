@@ -13,7 +13,7 @@ import java.time.Period;
 public class ProjectConfig {
 
     @Bean
-    @Primary
+    //@Primary
     public Parrot parrot1(){
         Parrot p = new Parrot();
         p.setName("KoKo");
