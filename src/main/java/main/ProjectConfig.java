@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Primary;
 import java.time.Period;
 
 @Configuration
+@ComponentScan(basePackages = "main")
 public class ProjectConfig {
 
     @Bean
@@ -26,12 +27,12 @@ public class ProjectConfig {
         return p;
     }
 
-    @Bean
+    /*@Bean
     public Human person(@Qualifier("parrot2") Parrot parrot2){
         Human h = new Human();
         h.setName("Ella");
         h.setParrot(parrot2);
         return h;
-    }
+    }*/
 
 }
