@@ -3,15 +3,11 @@ package main;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Human {
     String name = "Ella";
 
     Parrot parrot;
-
-    public Human(Parrot parrot) {
-        this.parrot = parrot;
-    }
 
     public String getName() {
         return name;
